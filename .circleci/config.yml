@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: oraclejdk8
+      - image: circleci/android:api-25-alpha
     environment:
       ANDROID_HOME: /usr/local/android-sdk-linux
       GRADLE_OPTS: '-Dorg.gradle.jvmargs="-Xmx2048m -XX:+HeapDumpOnOutOfMemoryError"'
