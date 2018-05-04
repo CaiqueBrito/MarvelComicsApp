@@ -12,7 +12,7 @@ jobs:
           key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
       - run:
           name: Download Dependencies
-          command: ./gradlew androidDependencies
+          command: echo y | android update sdk --no-ui --all --filter tools,platform-tools,build-tools-21.1.2,android-21,extra-google-m2repository,extra-google-google_play_services,extra-android-support ./gradlew androidDependencies
       - save_cache:
           paths:
             - ~/.gradle
