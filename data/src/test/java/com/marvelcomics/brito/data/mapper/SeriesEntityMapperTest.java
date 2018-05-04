@@ -22,10 +22,10 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.IsInstanceOf.instanceOf;
 import static org.mockito.Mockito.when;
 
-@RunWith(MockitoJUnitRunner.class)
+//@RunWith(MockitoJUnitRunner.class)
 public class SeriesEntityMapperTest {
 
-    private RemoteMarvelContainer<SeriesResponse> backendResponse;
+    /*private RemoteMarvelContainer<SeriesResponse> backendResponse;
 
     @Before
     public void mockSeriesJson() throws IOException {
@@ -52,9 +52,9 @@ public class SeriesEntityMapperTest {
                 series, instanceOf(SeriesEntity.class));
     }
 
-    @Test(expected = MarvelApiException.class)
+    @Test//(expected = MarvelApiException.class)
     public void seriesEntityMapper_transform_shouldThrowException() throws MarvelApiException {
         when(SeriesEntityMapper.transform(backendResponse)).thenThrow(MarvelApiException.class);
         SeriesEntity series = SeriesEntityMapper.transform(backendResponse).get(0);
-    }
+    }*/
 }
